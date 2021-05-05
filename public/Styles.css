@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff9b0;
+}
+
+.navbar {
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    padding: 20px !important;
+}
+
+
+.catAnimate {
+    bottom: 400px;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 0;
+    transition: 1.5s;
+}
+
+.rotext {
+    margin:50px auto 0 auto;
+    text-align: center;
+    width: fit-content;
+    font-size: 5rem;
+    z-index: 1;
+    transition: 3s;
+    color:#3f3f44;
+}
+
+.rotext-b{
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    z-index: 1;
+    transition: 3s;
+    color:#3f3f44;
+}
+.box{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    margin-top: 340px;
+}
+.message{
+    height: 400px;
+    width: 400px;
+    background-color: #ffab73;
+    border-radius: 50px;
+}
+.catfly{
+    height: 400px;
+    width: 400px;
+}
+.catfly-text{
+    min-width: 400px; 
+    position: relative;
+    text-align: center;
+    font-size: 1.2vw;
+    padding: 30px;
+    text-overflow: clip;
+}
+
+
+.gallery{
+    margin-top: 100px;
+}
+.grid-container {
+    margin: 0 auto;
+    justify-items: center;
+    width: min-content;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px 50px;
+    grid-template-areas:
+        "cat-1 cat-2"
+        "cat-1 cat-3"
+}
+
+.grid-container>img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cat-1 {
+    grid-area: cat-1;
+    max-width: 30rem;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.cat-2 {
+    grid-area: cat-2;
+    max-width: 30rem;
+    margin-top: 100px;
+}
+
+.cat-3 {
+    grid-area: cat-3;
+    max-width: 30rem;
+}
+
+
+
+footer{
+    margin-top: 100px;
+    bottom: 0;
+    background-color: #ffab73;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    
+.cat-1 {
+    grid-area: cat-1;
+    max-width: 15rem;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cat-2 {
+    grid-area: cat-2;
+    max-width: 15rem;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cat-3 {
+    grid-area: cat-3;
+    max-width: 15rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cat4 {
+    grid-area: cat4;
+    max-width: 20rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+    .grid-container{
+        margin: 0 auto;
+        width: 380px;
+        gap: 20px 20px;
+        grid-template-areas:
+        "cat-1"
+        "cat-2"
+        "cat-3"
+        "cat4";
+    }
+}
